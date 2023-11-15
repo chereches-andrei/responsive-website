@@ -1,0 +1,520 @@
+
+ /* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    position: relative;
+    
+}
+.container{
+   width:fit-content;
+   position: absolute;      
+}
+
+/* ----------------  header section ---------------------- */
+
+header{
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(to bottom, #f38181b6, #fce38acc), url('images/background/Layer\ 15.jpg');
+    background-position: bottom 0 right -20px ;
+    background-size: cover;
+    color:white;
+   
+}
+header h1{
+    font-size: 150px;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    line-height: 140px;   
+}
+header button{
+    font-size: 14px;
+    padding:10px;
+    margin-top:80px;
+    background: none;
+    border:5px solid white;
+    color:white;
+    width:190px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .8s;
+    
+}
+header button:hover{
+    color:#f38181;
+    border:5px solid #f38181b6;
+}
+
+.top-side{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:20px;
+}
+.logo p{
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul{
+    display:flex;
+    gap:50px;
+    font-size: 14px;
+    
+}
+nav ul a li{
+    list-style-type: none;
+    font-family: "poppins";
+    position: relative;
+    text-transform: uppercase;
+    
+}
+nav ul a li img{
+    width:20px;
+    color:white;
+}
+nav ul a{
+    text-decoration: none;
+    color:white;
+
+    
+}
+nav ul a li:hover{
+    color:#fce38a;
+}
+nav ul a li::after{
+    content:'';
+    background-color: white;
+    height: 3px;
+    width:0;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:.8s;
+}
+nav ul a li:hover::after{
+    width:100%;
+    background-color: #fce38a;
+}
+.welcome-text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main, footer{
+    margin: 0 20% 0 20%;
+    
+}
+/*----------------------------------------- services style --------------------------------------------------------------- */
+
+.services-page{
+    text-align: center;
+    margin:50px 0 50px 0;
+    color:#333333;
+    
+}
+.services-page span{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;  
+}
+.services-page h1{
+    position: relative;
+    padding-bottom:20px;
+    text-transform: uppercase; 
+}
+.services-page h1::after{
+    content:'';
+    background-color: #f38181;
+    height: 3px;
+    width:80px;
+    position: absolute;
+    left: 47.5%;
+    bottom:-10px;
+    text-align: center;
+    margin:-1px;;
+    
+}
+.services-items{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:50px 0 50px 0;
+    gap:50px;  
+}
+.services-items img{
+    width:40px;
+    margin-right: 20px;
+}
+.services-items h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:#333333;
+}
+.services-items p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: justify;
+    color:#999999;
+}
+.photography , .web-desing , .creativity, .seo, .css-html, .digital{
+    display:flex;
+    gap:10px;
+    text-align: left;
+}
+
+/*------------------------------------------ about us ----------------------------------------*/
+
+.about-us{
+    text-align: center;
+    margin-top:50px;
+}
+.about-us span{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+}
+.about-us h1{
+    text-transform: uppercase;
+    margin:10px 0 30px 0;
+    position: relative;
+    padding-bottom: 20px;  
+}
+.about-us h1::after{
+    content:'';
+    background-color: #f38181;
+    height: 3px;
+    width:80px;
+    position: absolute;
+    left: 47.5%;
+    bottom:-10px;
+    text-align: center;
+    margin:-1px;;   
+}
+.about-us p{
+    margin:50px 0 50px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    line-height: 24px;
+    color:#999999;
+}
+.members{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    grid-auto-flow: column;
+}
+.person{
+    position: relative;   
+}
+.person h3{
+    margin-top:15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: auto;
+    font-family: 'Montserrat', sans-serif;
+    color:#333333;   
+}
+.person p{
+    margin:5px 0 5px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    
+   
+}
+.person img{
+    position: relative;
+    opacity: 100%;
+    transition: .8s;
+    max-width: 100%;
+}
+.person img:hover {
+    opacity: 5%;
+    box-shadow: 5px 5px #95e1d3;
+     }
+ .gradient{
+    background:linear-gradient(to bottom, #f38181b6, #fce38acc);
+    margin-left:12%;
+    padding: 0;
+    left:0;
+    height: 85%;
+    min-width: 75%;
+    position: absolute;
+    opacity:80%;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;    
+}
+.social-icons > div{
+    background-color: #fce38a;
+    opacity: 100%;
+    padding:5px;    
+}
+.social-icons:hover{
+    cursor: pointer;
+}
+.media{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:28%;
+    bottom:10%;
+    height:100%;
+    z-index: 0;
+}
+.media > div{
+    background-color: #fce38a;
+    padding:5px;
+}
+.media:hover{
+    z-index: 1;
+    cursor: pointer;
+}
+
+/*--------------------------------------------- footer -------------------------------------*/
+
+footer::after{
+    content:'';
+    width:100%;
+    height: 2px;
+    background-color: #e5e5e5;
+    position: absolute;
+    margin:50px 0 50px 0;
+}
+footer{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:50px 0 50px 0;
+   position: relative;
+}
+.copyright{
+    text-align: left;
+    font-size: 14px;
+    margin-top:20px;
+    color:#666666;
+    display:flex;
+    align-items: center;
+}
+.copyright span{
+    color:#f38181;
+}
+.subscribe{
+    margin-top:20px;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.subscribe input{
+    font-size: 15px;
+    color:#e5e5e5;
+    padding:12px;
+    min-width:300px;
+    
+}
+
+.subscribe button{
+    font-size: 14px;
+    padding:15px 30px 15px 30px;
+    background-color: #95e1d3;
+    border:none;
+    color:white;
+    transition: .8s;;
+}
+.subscribe button:hover{
+    background-color: #f38181;
+    cursor: pointer;
+}
+
+/*========================================  resposive design ===================================== */
+
+/*========================================  max 1920px ===================================== */
+
+@media screen and (max-width: 1920px){
+    /*---------------------   header ------------------------*/
+    .top-side{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    .logo{
+        margin-top:20px;
+        margin-bottom:10%;
+    }
+    nav ul a li{
+        font-size: 30px;
+    }
+    nav ul a li img{
+        width:50px;
+    }
+   /*-------------------------------  services -------------------------- */
+   main{
+    min-width:60%;
+    
+   }
+   .services-page{
+    font-size: 40px;
+   }
+   .services-items h2, p, span{
+    font-size: 30px;
+   }
+
+   /*---------------------------------  about me ---------------------------- */
+   
+   .about-us span, h1, p{
+    font-size: 40px;
+   }
+   
+   .person img{
+    position: relative;
+   }
+   .members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .gradient{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    left:0;
+    max-height: 100%;
+    min-width: 100%;
+    
+   }
+
+   /* ------------------------------------  footer -------------------------------- */
+   
+   
+   .copyright p, span{
+    font-size: 20px;
+   }
+   .subscribe input, button{
+    font-size: 20px;
+   }
+}
+/*-------------------------------------- max width: 1500px ----------------------------------- */
+
+@media screen and (max-width:1500px){
+
+    /*-------------------------------------- services ----------------------------------- */
+
+    .services-page > h1{
+        font-size: 40px;
+    }
+    .services-items{
+        display:flex;
+        flex-direction: column;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        
+    }
+    
+    .about-us span, h1, p{
+        font-size: 40px;
+       }
+    .members {
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        
+       }
+       .gradient{
+        position: absolute;
+        margin:0;
+        padding: 0;
+        left:0;
+        max-height: 100%;
+        min-width: 100%;
+        
+       }
+      
+       .copyright p, span{
+        font-size: 15px;
+       }
+       .subscribe input, button{
+        font-size: 20px;
+       }
+}
+
+/*-------------------------------------- max width: 900px ----------------------------------- */
+
+@media screen and (max-width:900px) {
+    
+    nav ul a li{
+        font-size: 20px;
+    }
+    .welcome-text h1, button{
+        font-size: 50px;
+    }
+    .copyright p, span{
+        font-size: 20px;
+        margin-right: 10px;
+       }
+       .subscribe input, button{
+        font-size: 10px;
+       }
+}
+
+@media  screen and (max-width:700px) {
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul a li{
+        font-size: 30px;
+    }
+    nav ul a li img{
+        width:50px;
+    }
+   
+    footer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .copyright p, span{
+        align-items: center;
+        font-size: 15px;
+        margin-right: 10px;
+       }
+       .subscribe{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+       }
+       .subscribe input{
+        margin-bottom: 10px;
+        text-align: center;
+       }
+       .subscribe input, button{
+        font-size: 10px;
+        align-items: center;
+        
+
+       }
+}
